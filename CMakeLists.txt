@@ -2,7 +2,7 @@ cmake_minimum_required (VERSION 3.9)
 
 project(maxminddb
   LANGUAGES C
-  VERSION 1.10.0
+  VERSION 1.11.0
 )
 set(MAXMINDDB_SOVERSION 0.0.7)
 set(CMAKE_C_STANDARD 99)
@@ -83,7 +83,6 @@ target_include_directories(maxminddb PUBLIC
   $<BUILD_INTERFACE:${PROJECT_SOURCE_DIR}/include>
   $<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/generated/>
   $<INSTALL_INTERFACE:include>
-  $<INSTALL_INTERFACE:generated>
 )
 
 set(MAXMINDB_HEADERS
