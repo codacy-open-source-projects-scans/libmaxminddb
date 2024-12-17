@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 3.9)
+cmake_minimum_required (VERSION 3.9...3.30)
 
 project(maxminddb
   LANGUAGES C
@@ -13,6 +13,7 @@ if (WIN32)
 endif()
 option(BUILD_SHARED_LIBS "Build shared libraries (.dll/.so) instead of static ones (.lib/.a)" OFF)
 option(BUILD_TESTING "Build test programs" ON)
+option(BUILD_FUZZING "Build with fuzzer" OFF)
 option(MAXMINDDB_BUILD_BINARIES "Build binaries" ON)
 option(MAXMINDDB_INSTALL "Generate the install target" ON)
 
